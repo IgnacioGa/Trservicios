@@ -1,0 +1,49 @@
+body{
+	margin-right: 0px;
+}
+
+#carouselExampleIndicators{
+
+}
+
+.carousel-item > img {
+  top: 0;
+  left: 0;
+  min-width: 100%;
+  height: 29rem;
+}
+img {
+  vertical-align: middle;
+  border-style: none;
+}
+.slides{
+	background-color: #a5a5af;
+}
+.circles{
+	background-color: #f9f0f0;
+}
+.divisions{
+	background-color: #ffd9be;
+}
+.divisions2{
+	background-color: #ea6c80;
+}
+.col-lg-4{
+	margin-top: 2rem;
+}
+.featurette-divider{
+	margin-top: 0px;
+	height: 60px;
+}
+.col-md-4{
+	margin-bottom: 10px;
+}
+.row, .featurette{
+	margin-left: 2rem;
+}
+hr{
+	margin-bottom: 0px;
+}
+footer{
+	background-color: white;
+}
