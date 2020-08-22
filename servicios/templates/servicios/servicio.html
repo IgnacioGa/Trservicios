@@ -1,0 +1,52 @@
+{% extends "servicios/layout.html" %}
+
+{% block body %}
+{% load static %}
+<div class="slides">
+	<!-- Slide pages -->
+<div id="carouselExampleIndicators" class="carousel slide carousel-fade" data-ride="carousel">
+    <div class="carousel-inner">
+    	{% for serv in servicio %}
+    	{% for image in img %}
+        <div class="carousel-item {% if forloop.first %}
+      								active
+    							  {% endif %}">
+            <img class="d-block w-100" src="{{image.imagen.url}}" alt="{{serv.servicio}}">
+            <div class="carousel-caption d-md-block">
+                <h5>{{ serv.servicio }}</h5>
+            </div>
+        </div>
+        {% endfor %}
+     	{% endfor %}
+
+        <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+        	<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        	<span class="sr-only">Siguiente</span>
+    	</a>
+    	<a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+        	<span class="carousel-control-next-icon" aria-hidden="true"></span>
+        	<span class="sr-only">Anterior</span>
+   		</a>
+    </div>
+</div>
+</div>
+{% for serv in servicio %}
+<p style="padding: 1.5rem;"> {{ serv.descripcion }}</p>
+{% endfor %}
+<div class="form">
+<form action="" method="post">
+	{{ form.non_field_errors }}
+	{% csrf_token %}
+	{{ form.message.errors }}
+  	<div class="col-sm-6">
+  		{{ form.nombre }}
+  	</div>
+  	<div class="col-sm-6">
+  		{{ form.email }}
+  	</div>
+  	<div class="col-sm-6">
+  		{{ form.msg }}
+  	<button type="submit" class="btn btn-primary mb-2">Enviar</button>
+ </form> 
+</div>	
+{% endblock %}

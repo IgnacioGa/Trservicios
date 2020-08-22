@@ -1,49 +1,114 @@
-body{
-	margin-right: 0px;
-}
+/*HTML things */
+body {
+  margin-right: 0px; }
 
-#carouselExampleIndicators{
+img {
+  vertical-align: middle;
+  border-style: none; }
 
-}
+hr {
+  margin-bottom: 0px;
+  border-top: 1px dashed blue; }
 
+footer {
+  background-color: white; }
+
+/*Navbar*/
+#nombrePage {
+  pointer-events: none;
+  cursor: default; }
+
+/*Carousel*/
 .carousel-item > img {
   top: 0;
   left: 0;
   min-width: 100%;
-  height: 29rem;
-}
-img {
-  vertical-align: middle;
-  border-style: none;
-}
-.slides{
-	background-color: #a5a5af;
-}
-.circles{
-	background-color: #f9f0f0;
-}
-.divisions{
-	background-color: #ffd9be;
-}
-.divisions2{
-	background-color: #ea6c80;
-}
-.col-lg-4{
-	margin-top: 2rem;
-}
-.featurette-divider{
-	margin-top: 0px;
-	height: 60px;
-}
-.col-md-4{
-	margin-bottom: 10px;
-}
-.row, .featurette{
-	margin-left: 2rem;
-}
-hr{
-	margin-bottom: 0px;
-}
-footer{
-	background-color: white;
-}
+  height: 29rem; }
+
+.slides {
+  padding: 1.5rem; }
+
+.carousel-caption {
+  position: absolute;
+  background: rgba(0, 0, 0, 0.4);
+  padding: 10px 10px;
+  border-radius: 93px;
+  border: 1px solid #000000;
+  color: white;
+  font-weight: 500;
+  font-family: 'Montserrat',sans-serif; }
+
+/*Circles*/
+#circles {
+  background-image: radial-gradient(circle at 50% 50%, #efffff 0, #e3fffd 12.5%, #d7fff5 25%, #ccf6ea 37.5%, #c2e1db 50%, #b9ccca 62.5%, #b2baba 75%, #ababab 87.5%, #a69f9e 100%); }
+
+.col-lg-4 {
+  margin-top: 2rem;
+  padding: 1rem 1rem; }
+
+.titleContainer {
+  padding-top: 1rem; }
+
+.ourJobs {
+  width: 24%;
+  padding-left: 1rem;
+  padding-bottom: 0.5rem;
+  border-radius: 50px;
+  border: 1px solid #000000;
+  background: #d4e4ef;
+  background: -moz-linear-gradient(top, #d4e4ef 0%, #86aecc 100%);
+  background: -webkit-gradient(left top, left bottom, color-stop(0%, #d4e4ef), color-stop(100%, #86aecc));
+  background: -webkit-linear-gradient(top, #d4e4ef 0%, #86aecc 100%);
+  background: -o-linear-gradient(top, #d4e4ef 0%, #86aecc 100%);
+  background: -ms-linear-gradient(top, #d4e4ef 0%, #86aecc 100%);
+  background: linear-gradient(to bottom, #d4e4ef 0%, #86aecc 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#d4e4ef', endColorstr='#86aecc', GradientType=0 ); }
+
+.text {
+  margin-top: 1rem; }
+
+.rounded-circle {
+  transition: transform .2s;
+  margin-top: 1rem; }
+
+.rounded-circle:hover {
+  transform: scale(1.2); }
+
+/*Divisiones*/
+.row {
+  margin-right: 0px;
+  padding-left: 1rem; }
+
+.featurette-divider {
+  margin-top: 0px;
+  height: 60px; }
+
+.col-md-4 {
+  margin-bottom: 10px; }
+
+/* Contacto */
+.form {
+  padding: 1.5rem; }
+  .form .form-control {
+    padding-left: 10px;
+    border: 0;
+    border-bottom: 1px solid #212121;
+    border-radius: 0;
+    background-color: transparent;
+    box-shadow: none;
+    outline: 0 none transparent;
+    -webkit-appearance: none;
+    padding-left: 1rem;
+    margin-bottom: 1rem; }
+  .form textarea {
+    margin-top: 40px;
+    min-height: 200px;
+    resize: none; }
+  .form .form-control:focus {
+    box-shadow: none;
+    border-bottom-color: #e1e1e1; }
+  .form ::-moz-placeholder,
+  .form ::-webkit-input-placeholder {
+    font-size: 16px; }
+
+/*# sourceMappingURL=styles.css.map */
